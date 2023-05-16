@@ -10,6 +10,11 @@ Permutation Invariance:
 A function is a permutation invariant if its output does not change by changing the ordering of its input. 
 A jigsaw puzzle is also permutation invariance. No matter what the ordering of puzzle pieces are the output would always be fixed.
 
+Overview of the code:
+Here we first took a dataset of normal images to create a dataset of shuffled 2x2 images. We conducted this data generation by diving the images into 2x2 grid format and then shuffle it randomly to store in the new dataset. This dataset was then divided for training and testing datasets.
+We then trained a model to rearrange this shuffled image to the original form while storing the position of the image pices in an array format.
+We then tested this model on the test set accessed by the label number of the image.
+
 Inputs:
 
 ![image](https://user-images.githubusercontent.com/76091761/234572368-361a59f0-eb1e-42d3-8056-4177257018a0.png) 
